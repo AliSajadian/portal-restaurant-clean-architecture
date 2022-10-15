@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\portal.application\portal.application.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  	<ItemGroup>
+		<ProjectCapability Include="DynamicFileNesting" />
+		<ProjectCapability Include="ConfigurableFileNesting" />
+		<ProjectCapability Include="ConfigurableFileNestingFeatureEnabled" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+	  <PackageReference Include="MediatR" Version="11.0.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.9" />
+	  <PackageReference Include="Serilog.AspNetCore" Version="6.0.1" />
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+	</ItemGroup>
+</Project>
